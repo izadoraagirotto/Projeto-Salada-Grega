@@ -1,0 +1,74 @@
+/*1.Estilos gerais para a página*/
+/* Reset CSS */
+
+/* 1.Reset CSS básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+    font-family: sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 2. Espaço utilizado para criar nosso card */
+body{
+    font-family: 'Georgia',  serif; /*uma fonte um pouco mais elegante para receitas*/
+    background-color: #f5f5f5;/*um tom suave de cinza para o fundo*/
+    color: #333; /*cor de texto escura para boa legibilidade*/
+
+    display: flex; /*usando flexbox para centralizar o cara*/
+    justify-content: center; /*centralozar horizontalmente*/
+    align-items: center; /*centralizar verticalmente*/
+    min-height: 100vh; /*garanta que o corpo ocupe a altura total da viewport*/
+    margin: 0;
+}
+/* 3. Estilizar o card da receita*/
+.recipe-card{
+    width: 350px; /*largura fixa para o card */
+    background-color: #fff; /*fundo branco para o card*/
+    border-radius: 15px; /*Bordas arredondadas em 15px*/
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /*sombra suave para dar profundidade*/
+    /*Esta propriedade "corta" qualquer conteúdo filho (no caso, nossa imagem), que tente "vazar" para fora dos cantos arredondados*/
+    overflow: hidden; /*garante que o conteúdo não ultrapasse as bordas arredondadas*/
+}
+/* 4. Estilizar a imagem das receita - nosso foco principal*/
+.recipe-image{
+    width: 100%; /* a imagem ocupe toda alargura do card*/
+    display: block; /*Remove o espaço da imagem*/
+}
+/* 5. Estilizar o conteúdo da receita (título, indregientes, instruções) */
+.recipe-content {
+    padding: 25px; /* Espaçamento interno para o conteúdo*/
+}
+
+/* 6. Estilizar o título da receita*/
+.recipe-title{
+    font-size: 1.5rem; /*1rem= 16px, tamanho rel é 14px/ /*Tamanho maior para o título*/
+    margin-bottom: 15px; /*Espaçamento abaixo do título*/
+    margin-top: 0;
+    color: #27ae60; /*um verde vibrantepara o título*/
+}
+
+/* 7. Esttilizar a seção da descrição*/
+.recipi-description{
+    font-size: 1rem; /*tamanho padrão para o texto*/
+    line-height: 1.6; /*Espaçamento entre linhas para melhor legilibidade*/
+    color: #666; /*cinza médio para o texto*/
+    margin-bottom: 20px; /*Espaçamento abaixo da descrição*/
+}
